@@ -14,6 +14,8 @@ var jsSources = [
 	'components/scripts/template.js'
 ];
 var sassSources = ['components/sass/style.scss'];
+var htmlSources = ['builds/development/*.html'];
+var jsonSources = ['builds/development/js/*.json'];
 // gulp.task('log', function() {
 // 	gutil.log('workflows are awesome');
 // });
@@ -49,13 +51,25 @@ gulp.task('watch', function() {
 	gulp.watch(coffeeSources, ['coffee']);
 	gulp.watch(jsSources, ['js']);
 	gulp.watch('components/sass/*.scss', ['compass']);
+	gulp.watch(htmlSources, ['html']);
+	gulp.watch(jsonSources, ['json']);
 })
 
-gulp.task('default', ['coffee', 'js', 'compass', 'connect', 'watch']); // you don't have to tell gulp what to run if you name the task default
+gulp.task('default', ['html', 'json', 'coffee', 'js', 'compass', 'connect', 'watch']); // you don't have to tell gulp what to run if you name the task default
 
 gulp.task('connect', function() {
 	connect.server({
 		root: 'builds/development/',
 		livereload: true
 	});
+});
+
+gulp.task('html', function() {
+	gulp.src(htmlSources)
+		.pipe(connect.reload());
+});
+
+gulp.task('json', function() {
+	gulp.src(jsonSources)
+		.pipe(connect.reload());
 });

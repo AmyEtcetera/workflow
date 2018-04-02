@@ -56,7 +56,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 body {
-  background: #eddbba;
+  background: white;
   font-family: "Inika", serif;
   font-size: 1.1em;
 }
@@ -148,8 +148,8 @@ section {
 }
 
 .featuredartists {
-  background: #8D8862;
-  border-top: 20px solid #E3C691;
+  background: #cccccc;
+  border-top: 20px solid whitesmoke;
   border-bottom: 50px solid #507356;
 }
 .featuredartists h1 {
@@ -164,7 +164,7 @@ section {
 .featuredartists h2 {
   margin-top: 20px;
   font-size: 1.8em;
-  color: #dbb570;
+  color: #e1e1e1;
 }
 @media (max-width: 700px) {
   .featuredartists h2 {
@@ -180,11 +180,11 @@ section {
 .featuredartists .artistlist h2 {
   margin-top: 5px;
   font-size: 1.2em;
-  color: #ebd7b2;
+  color: white;
 }
 .featuredartists .artistlist .item {
   min-width: 95px;
-  color: #6f6b4d;
+  color: #b3b3b3;
   width: 18%;
   float: left;
   padding: 1%;
@@ -211,7 +211,7 @@ section {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  border-bottom: 50px solid #8D8862;
+  border-bottom: 50px solid #cccccc;
 }
 @media (min-width: 801px) {
   .potterypix {
@@ -243,7 +243,7 @@ section {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  border-bottom: 50px solid #8D8862;
+  border-bottom: 50px solid #cccccc;
 }
 @media (min-width: 801px) {
   .workshoppix {
@@ -269,8 +269,8 @@ section {
 }
 .ontour h2 {
   font-size: 1.8em;
-  color: #8D8862;
-  border-top: 1px solid #8D8862;
+  color: #cccccc;
+  border-top: 1px solid #cccccc;
   padding-top: 5px;
 }
 .ontour h3 {
